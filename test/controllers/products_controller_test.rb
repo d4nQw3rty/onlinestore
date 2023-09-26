@@ -29,6 +29,7 @@ class ProductControllerTest < ActionDispatch::IntegrationTest
       }
     }
     assert_redirected_to products_path
+    assert_equal flash[:notice], 'Tú producto se ha creado correctamente'
   end
 
   test 'does not allow to create new product with empty fields' do
@@ -41,4 +42,5 @@ class ProductControllerTest < ActionDispatch::IntegrationTest
     }
     assert_response :unprocessable_entity
   end
+
 end
