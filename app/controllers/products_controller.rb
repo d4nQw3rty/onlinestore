@@ -34,6 +34,12 @@ class ProductsController < ApplicationController
     end
   end
 
+  def destroy
+    @product = Product.find(params[:id])
+    @product.destroy
+    redirect_to products_path, notice: 'El producto se ha eliminado', status: :see_other
+  end
+
   private
 
   def product_params
