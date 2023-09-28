@@ -17,10 +17,12 @@ es:
             description:
               blank: 'no puede estar vacía'
             price:
-              blank: 'no puede estar vacío'
-       
+              blank: 'no puede estar vacío'       
   common:
     confirm: '¿Estás seguro?'
+  shared:
+    header:
+      add: 'Añadir producto'
   products:
     edit:
       title: 'Editar producto'
@@ -28,6 +30,9 @@ es:
       title: 'Añadir Producto'
     index:
       title: 'Productos:'
+    show:
+      edit: 'Editar producto'
+      delete: 'Borrar producto'
     create:
       created: 'Tú producto se ha creado correctamente'
     update:
