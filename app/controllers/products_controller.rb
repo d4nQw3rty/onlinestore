@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   def index
-    @products = Product.all
+    @products = Product.all.with_attached_photo
   end
 
   def show
@@ -24,7 +24,7 @@ class ProductsController < ApplicationController
     product
   end
 
-  def update  
+  def update
     if product.update(product_params)
       redirect_to products_path, notice: 'Producto Actualizado'
     else
@@ -32,7 +32,7 @@ class ProductsController < ApplicationController
     end
   end
 
-  def destroy  
+  def destroy
     product.destroy
     redirect_to products_path, notice: 'El producto se ha eliminado', status: :see_other
   end
