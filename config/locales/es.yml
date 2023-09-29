@@ -2,12 +2,15 @@ es:
   activerecord:
     models:
       product: Producto
+      category: Categoria
     attributes:
       product:
         title: 'Título'
         description: 'Descripción'
         price: 'Precio'
         photo: 'Foto'
+      category:
+        name: 'Nombre'
     errors:
       models:
         product:
@@ -20,10 +23,13 @@ es:
               blank: 'no puede estar vacío'       
   common:
     confirm: '¿Estás seguro?'
+    back: 'Regresar'
   shared:
     header:
       add: 'Añadir producto'
   products:
+    form:
+      add: 'Crear producto'
     edit:
       title: 'Editar producto'
     new:
@@ -39,3 +45,22 @@ es:
       updated: 'Producto Actualizado'
     destroy:
       destryed: 'El producto se ha eliminado'
+  categories:
+    form:
+      add: 'Crear categoría'
+    category:
+      edit: 'Editar'
+      delete: 'Borrar'
+    index:
+      title: 'Categorías'
+      new: 'Añadir categoría'
+    edit:
+      title: 'Editar categoría'
+    create:
+      created: 'Tu categoría se ha creado correctamente'
+    update:
+      updated: 'Tu categoría se ha actualizado correctamente'
+    destroy:
+      destroyed: 'Tu categoría se ha eliminado correctamente'
+    new:
+      title: 'Añadir categoría'

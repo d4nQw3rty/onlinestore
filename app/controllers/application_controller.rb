@@ -8,7 +8,6 @@ class ApplicationController < ActionController::Base
   private
 
   def locale_from_header
-    lang = request.env['HTTP_ACCEPT_LANGUAGE']
-    lang.present? ? lang.scan(/^[a-z]{2}/).first : 'es'
+    request.env['HTTP_ACCEPT_LANGUAGE']&.scan(/^[a-z]{2}/)&.first
   end
 end
