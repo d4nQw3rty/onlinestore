@@ -27,6 +27,8 @@ es:
   shared:
     header:
       add: 'Añadir producto'
+      categories: 'Categorias'
+
   products:
     form:
       add: 'Crear producto'
