@@ -42,7 +42,7 @@ es:
       min_price: 'Precio mínimo'
       max_price: 'Precio Máximo'
       query_text: '¿Qué quieres buscar?'
-      order: 'Recientes'
+      newest: 'Recientes'
       expensive: 'Más caros'
       cheapest: 'Más baratos'
     show:
