@@ -45,6 +45,9 @@ gem "bootsnap", require: false
 # postrgresql full text search
 gem "pg_search", "~> 2.3"
 
+# pagination
+gem "pagy", "~> 6.1"
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
@@ -73,3 +76,4 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
