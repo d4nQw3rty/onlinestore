@@ -21,25 +21,25 @@ class FindProducts
   end
 
   def filter_by_category_id(scoped, category_id)
-    return scoped unless category_id
+    return scoped unless category_id.present?
 
     scoped.where(category_id: category_id)
   end
 
   def filter_by_min_price(scoped, min_price)
-    return scoped unless min_price
+    return scoped unless min_price.present?
 
     scoped.where('price >= ?', min_price)
   end
 
   def filter_by_max_price(scoped, max_price)
-    return scoped unless max_price
+    return scoped unless max_price.present?
 
     scoped.where('price <= ?', max_price)
   end
 
   def filter_by_query_text(scoped, query_text)
-    return scoped unless query_text
+    return scoped unless query_text.present?
 
     scoped.search_full_text(query_text)
   end
