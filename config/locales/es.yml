@@ -30,7 +30,10 @@ es:
     header:
       add: 'Añadir producto'
       categories: 'Categorias'
-
+  authentication:
+    users:
+      create:
+        created: 'Tú cuenta se ha creado!'
   products:
     form:
       add: 'Crear producto'
