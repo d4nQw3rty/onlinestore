@@ -20,6 +20,23 @@ en:
               blank: "can't be blank"
             price:
               blank: "can't be blank"
+        category:
+          attributes:
+            name:
+              blank: 'no puede estar vacío'
+        user:
+          attributes:
+            username:
+              blank: 'no puede estar vacío'
+              too_short: 'muy corto minimo tres carácteres'
+              invalid: 'no valido'
+            email:
+              blank: 'no puede estar vacío'
+              invalid: 'no valido'
+              
+            password:
+              blank: 'no puede estar vacío'
+              too_short: 'muy corta minimo seis carácteres'
   common:
     confirm: 'Are you sure?'
     back: 'Go back'

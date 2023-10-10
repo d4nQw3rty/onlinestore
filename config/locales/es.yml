@@ -5,6 +5,7 @@ es:
     models:
       product: Producto
       category: Categoria
+      user: Usuario
     attributes:
       product:
         title: 'Título'
@@ -13,6 +14,10 @@ es:
         photo: 'Foto'
       category:
         name: 'Nombre'
+      user:        
+          username: 'Nombre de usuario'
+          email: 'Correo electrónico'
+          password: 'Clave'
     errors:
       models:
         product:
@@ -22,7 +27,24 @@ es:
             description:
               blank: 'no puede estar vacía'
             price:
-              blank: 'no puede estar vacío'       
+              blank: 'no puede estar vacío'
+        category:
+          attributes:
+            name:
+              blank: 'no puede estar vacío'
+        user:
+          attributes:
+            username:
+              blank: 'no puede estar vacío'
+              too_short: 'muy corto minimo tres carácteres'
+              invalid: 'no valido'
+            email:
+              blank: 'no puede estar vacío'
+              invalid: 'no valido'
+              
+            password:
+              blank: 'no puede estar vacío'
+              too_short: 'muy corta minimo seis carácteres'             
   common:
     confirm: '¿Estás seguro?'
     back: 'Regresar'
@@ -32,6 +54,8 @@ es:
       categories: 'Categorias'
   authentication:
     users:
+      new:
+        add: 'Registrar'
       create:
         created: 'Tú cuenta se ha creado!'
   products:
