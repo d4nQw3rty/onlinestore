@@ -47,6 +47,12 @@ en:
     users:
       create:
         created: 'You account has been created!'
+    sesions:
+      new:
+       add: 'login'
+      create:
+        welcome: 'Welcome!'
+        fails: 'Invalid login'
   products:
     edit:
       title: 'Edit product'

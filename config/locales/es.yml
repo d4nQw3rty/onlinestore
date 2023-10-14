@@ -58,6 +58,12 @@ es:
         add: 'Registrar'
       create:
         created: 'Tú cuenta se ha creado!'
+    sessions:
+      new:
+       add: 'Iniciar Sesión'
+      create:
+        welcome: 'Bienvenido!'
+        failed: 'Usuario o clave incorrecto'
   products:
     form:
       add: 'Crear producto'
