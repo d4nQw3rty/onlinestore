@@ -10,12 +10,12 @@ class Authentication::SessionsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should login a user by email" do
-    post sessions_url, params: { user: { login: @user.email, password: 'testme' } }
-    assert_redirected_to products_url
+    post sessions_url, params: { login: @user.email, password: 'testme' }
+    assert_redirected_to products_path
   end
 
   test "should login a user by username" do
-    post sessions_url, params: { user: { login: @user.username, password: 'testme' } }
+    post sessions_url, params:  { login: @user.username, password: 'testme' }
     assert_redirected_to products_url
   end
 end
