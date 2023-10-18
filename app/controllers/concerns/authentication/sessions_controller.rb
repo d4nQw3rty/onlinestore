@@ -5,7 +5,7 @@ class Authentication::SessionsController < ApplicationController
   def create
     @user = User.find_by("email = :login OR username = :login", {login: params[:login]})
     if @user&.authenticate(params[:password])
-      redirect_to products_path, notice: t('.welcome')
+      redirect_to products_url, notice: t('.welcome')
     else
       redirect_to new_session_url, alert: t('.failed')
     end
