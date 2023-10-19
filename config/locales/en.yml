@@ -40,6 +40,7 @@ en:
   common:
     confirm: 'Are you sure?'
     back: 'Go back'
+    not_logged_in: 'Login first'
   shared:
     header:
       add: 'Add product'

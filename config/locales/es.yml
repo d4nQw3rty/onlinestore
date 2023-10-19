@@ -48,6 +48,7 @@ es:
   common:
     confirm: '¿Estás seguro?'
     back: 'Regresar'
+    not_logged_in: 'Inicie Sesion Primero'
   shared:
     header:
       add: 'Añadir producto'
