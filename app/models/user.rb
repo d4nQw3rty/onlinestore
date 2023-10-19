@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   has_secure_password
+  has_many :products, dependent: :destroy
 
   validates :email, presence: true, uniqueness: true,
   format: {
@@ -8,7 +9,7 @@ class User < ApplicationRecord
   }
   validates :username, presence: true, uniqueness: true,
     length: {in: 3..15},
-    format: { 
+    format: {
     with: /\A[a-z-0-9-A-Z]+\z/,
     message: :invalid
     }
