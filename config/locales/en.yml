@@ -44,6 +44,9 @@ en:
   shared:
     header:
       add: 'Add product'
+      categories: 'Categories'
+      login: 'Login'
+      register: 'Register'
   authentication:
     users:
       create:

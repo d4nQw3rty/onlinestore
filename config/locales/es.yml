@@ -53,6 +53,8 @@ es:
     header:
       add: 'Añadir producto'
       categories: 'Categorias'
+      login: 'Iniciar sesion'
+      register: 'Registrar usuario'
   authentication:
     users:
       new:
