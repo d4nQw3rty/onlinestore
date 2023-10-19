@@ -67,6 +67,8 @@ es:
       create:
         welcome: 'Bienvenido!'
         failed: 'Usuario o clave incorrecto'
+      destroy:
+        destroyed: 'Cerró Sesión'
   products:
     form:
       add: 'Crear producto'

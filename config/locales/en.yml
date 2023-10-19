@@ -56,8 +56,12 @@ en:
        add: 'login'
       create:
         welcome: 'Welcome!'
-        fails: 'Invalid login'
+        failed: 'Invalid login'
+      destroy:
+        destroyed: 'logout'
   products:
+    form:
+      add: 'Crear producto'
     edit:
       title: 'Edit product'
     new:
