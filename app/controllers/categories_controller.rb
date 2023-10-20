@@ -1,5 +1,6 @@
 class CategoriesController < ApplicationController
   skip_before_action :protect_pages, only: [:index, :show]
+  before_action :authorize!
   def index
     @categories = Category.all.order(name: :asc)
   end
