@@ -15,6 +15,7 @@ en:
     confirm: 'Are you sure?'
     back: 'Go back'
     not_logged_in: 'Login first'
+    not_authorized0: 'You do not have permission for this action'
   shared:
     header:
       add: 'Add product'
