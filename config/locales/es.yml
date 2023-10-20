@@ -18,33 +18,7 @@ es:
           username: 'Nombre de usuario'
           email: 'Correo electrónico'
           password: 'Clave'
-    errors:
-      models:
-        product:
-          attributes:
-            title:
-              blank: 'no puede estar vacío'
-            description:
-              blank: 'no puede estar vacía'
-            price:
-              blank: 'no puede estar vacío'
-        category:
-          attributes:
-            name:
-              blank: 'no puede estar vacío'
-        user:
-          attributes:
-            username:
-              blank: 'no puede estar vacío'
-              too_short: 'muy corto minimo tres carácteres'
-              invalid: 'no valido'
-            email:
-              blank: 'no puede estar vacío'
-              invalid: 'no valido'
-              
-            password:
-              blank: 'no puede estar vacío'
-              too_short: 'muy corta minimo seis carácteres'             
+    
   common:
     confirm: '¿Estás seguro?'
     back: 'Regresar'
