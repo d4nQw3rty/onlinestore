@@ -42,7 +42,7 @@ es:
         welcome: 'Bienvenido!'
         failed: 'Usuario o clave incorrecto'
       destroy:
-        destroyed: 'Cerró Sesión'
+        destroyed: 'Usted cerró sesión correctamente'
   products:
     form:
       add: 'Crear producto'
