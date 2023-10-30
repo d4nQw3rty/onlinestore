@@ -16,6 +16,7 @@ en:
     back: 'Go back'
     not_logged_in: 'Login first'
     not_authorized0: 'You do not have permission for this action'
+    not_found: 'User not found'
   shared:
     header:
       add: 'Add product'
@@ -53,6 +54,7 @@ en:
     show:
       edit: 'Edit product'
       delete: 'Delete product'
+      view_profile: 'See moere products of %{username}'
     create:
       created: 'Your product has been successfully created'
     update:

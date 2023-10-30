@@ -13,3 +13,4 @@
     turbo_confirm: t('common.confirm')
   } if @product.owner? %>
 </div>
+<%=link_to t('.view_profile', username: @product.user.username), user_path(@product.user.username)%>
