@@ -23,6 +23,7 @@ en:
       categories: 'Categories'
       login: 'Login'
       register: 'Register'
+      favorites: 'Favorites'
   authentication:
     users:
       create:
@@ -73,3 +74,6 @@ en:
       title: 'Edit category'
     new:
       title: 'New category'
+  favorites:
+    index:
+      title: 'Favorites'
